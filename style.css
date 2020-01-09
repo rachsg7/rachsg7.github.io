@@ -12,7 +12,7 @@ header,
 footer {
     background-color: crimson;
     color: white;
-    padding: .75em 5em;
+    padding: .75em 1.2em .75em 5em;
     border-radius: 15px;
     margin: 1em 0;
 }
@@ -27,6 +27,8 @@ a {
 
 .self {
     float: right;
+    box-shadow: 0px 0px 14px #000;
+    border-radius: 7px;
 }
 
 footer a {
