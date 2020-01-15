@@ -1,15 +1,29 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Baskervville|Montserrat&display=swap');
 body {
     margin: 0 auto;
     max-width: 960px;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
+    background-color: #F5ECE6;
+}
+
+nav {
+    border-bottom: 1px solid #00000029;
+    padding: 1em;
+    background-color: white;
+}
+
+main {
+    background-color: white;
+    margin: 0;
+    padding: 0 2em;
 }
 
 h1 {
     text-align: center;
     color: #73729C;
-    margin: 2.2em;
+    margin: 0 2.2em;
+    padding: 1em;
 }
 
 h2,
@@ -19,4 +33,10 @@ p {
 
 a {
     color: #4B8C8E;
+}
+
+img {
+    box-shadow: rgb(0, 0, 0) 0px 0px 14px;
+    border-radius: 20px;
+    width
 }
