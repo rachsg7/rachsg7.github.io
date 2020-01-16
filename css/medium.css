@@ -1,0 +1,10 @@
+@media (min-width: 32.5em) {
+    .self {
+        float: right;
+    }
+    header,
+    footer {
+        padding: .75em 1.2em .75em 5em;
+        border-radius: 15px;
+    }
+}

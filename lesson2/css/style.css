@@ -1,3 +1,5 @@
+/* CSS for Design Principles page */
+
 @import url('https://fonts.googleapis.com/css?family=Baskervville|Montserrat&display=swap');
 body {
     margin: 0 auto;
@@ -9,26 +11,35 @@ body {
 
 nav {
     border-bottom: 1px solid #00000029;
-    padding: 1em;
+    padding: 1.5rem 4rem;
     background-color: white;
 }
 
 main {
     background-color: white;
-    margin: 0;
-    padding: 0 2em;
+    margin: 0 0 20px 0;
+    padding: 0px 4rem;
+    line-height: 1.75rem;
 }
 
 h1 {
     text-align: center;
-    color: #73729C;
-    margin: 0 2.2em;
-    padding: 1em;
+    color: white;
+    background-color: #73729C;
+    margin: 0 7rem;
+    padding: 3rem;
+    border-radius: 15px;
+    line-height: 3.2rem;
 }
 
-h2,
+h2 {
+    padding: 1rem 0 .5rem 0;
+    margin: 30px 0 30px;
+}
+
 p {
-    margin: 2em 1em;
+    padding: 0;
+    margin: 40px 0;
 }
 
 a {
@@ -38,5 +49,5 @@ a {
 img {
     box-shadow: rgb(0, 0, 0) 0px 0px 14px;
     border-radius: 20px;
-    margin: 10px;
+    margin: 10px 25px 0 0;
 }

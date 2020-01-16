@@ -2,20 +2,23 @@
 #content {
     margin: 0 auto;
     max-width: 960px;
+    background-color: white;
+    border-radius: 15px;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1rem;
+    background-color: #F5ECE6;
 }
 
 header,
 footer {
-    background-color: crimson;
+    background-color: #73729C;
     color: white;
-    padding: .75em 1.2em .75em 5em;
-    border-radius: 15px;
+    padding: 4vh;
     margin: 1em 0;
+    text-align: center;
 }
 
 main {
@@ -23,11 +26,10 @@ main {
 }
 
 a {
-    color: crimson;
+    color: #4B8C8E;
 }
 
 .self {
-    float: right;
     box-shadow: 0px 0px 14px #000;
     border-radius: 7px;
 }
