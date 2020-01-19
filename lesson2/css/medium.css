@@ -35,7 +35,10 @@
     .dominos4 {
         grid-row: 4/5;
     }
-    .shutterfly {
+    .shutterfly1,
+    .shutterfly2,
+    .shutterfly3,
+    .shutterfly4 {
         grid-column: 1/2;
     }
 }

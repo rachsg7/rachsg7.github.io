@@ -1,5 +1,52 @@
-@media (min-width: 42.5em) {
+@media (min-width: 82.5em) {
     body {
-        max-width: 1024px;
+        max-width: 1224px;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 1px 4rem;
+    }
+    footer {
+        border-radius: 15px;
+    }
+    .mollyMoons {
+        grid-column: 1/2;
+    }
+    .dominos1,
+    .dominos2,
+    .dominos3,
+    .dominos4 {
+        grid-column: 2/3;
+    }
+    .dominos1 {
+        grid-row: 1/2;
+    }
+    .dominos2 {
+        grid-row: 2/3;
+    }
+    .dominos3 {
+        grid-row: 3/4;
+    }
+    .dominos4 {
+        grid-row: 4/5;
+    }
+    .shutterfly1,
+    .shutterfly2,
+    .shutterfly3,
+    .shutterfly4 {
+        grid-column: 3/4;
+    }
+    .shutterfly1 {
+        grid-row: 1/2;
+    }
+    .shutterfly2 {
+        grid-row: 2/3;
+    }
+    .shutterfly3 {
+        grid-row: 3/4;
+    }
+    .shutterfly4 {
+        grid-row: 4/5;
     }
 }
