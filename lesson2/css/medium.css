@@ -7,9 +7,35 @@
         padding: 1rem;
     }
     main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         padding: 1px 4rem;
     }
     footer {
         border-radius: 15px;
+    }
+    .mollyMoons {
+        grid-column: 1/2;
+    }
+    .dominos1,
+    .dominos2,
+    .dominos3,
+    .dominos4 {
+        grid-column: 2/3;
+    }
+    .dominos1 {
+        grid-row: 1/2;
+    }
+    .dominos2 {
+        grid-row: 2/3;
+    }
+    .dominos3 {
+        grid-row: 3/4;
+    }
+    .dominos4 {
+        grid-row: 4/5;
+    }
+    .shutterfly {
+        grid-column: 1/2;
     }
 }
