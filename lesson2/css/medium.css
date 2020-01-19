@@ -9,4 +9,7 @@
     main {
         padding: 1px 4rem;
     }
+    footer {
+        border-radius: 15px;
+    }
 }

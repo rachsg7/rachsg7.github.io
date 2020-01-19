@@ -50,3 +50,15 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+footer {
+    background-color: #73729C;
+    color: white;
+    padding: 4vh;
+    margin: 1em 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
