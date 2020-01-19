@@ -5,7 +5,6 @@ body {
     margin: 0 auto;
     max-width: 960px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
     background-color: #F5ECE6;
 }
 
@@ -17,8 +16,8 @@ nav {
 
 main {
     background-color: white;
-    margin: 0 0 20px 0;
-    padding: 0px 4rem;
+    margin: 0px 0px 20px 0px;
+    padding: 1px 1rem;
     line-height: 1.75rem;
 }
 
@@ -26,10 +25,8 @@ h1 {
     text-align: center;
     color: white;
     background-color: #73729C;
-    margin: 0 7rem;
-    padding: 3rem;
-    border-radius: 15px;
-    line-height: 3.2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
 }
 
 h2 {
@@ -50,4 +47,6 @@ img {
     box-shadow: rgb(0, 0, 0) 0px 0px 14px;
     border-radius: 20px;
     margin: 10px 25px 0 0;
+    max-width: 100%;
+    height: auto;
 }

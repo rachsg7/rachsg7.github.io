@@ -1,0 +1,12 @@
+@media (min-width: 32.5em) {
+    h1 {
+        margin: 0 7rem;
+        padding: 3rem;
+        border-radius: 15px;
+        line-height: 3.2rem;
+        padding: 1rem;
+    }
+    main {
+        padding: 1px 4rem;
+    }
+}
