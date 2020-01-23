@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Bevan|Raleway&display=swap');
+body,
+main,
+footer {
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 16pt;
+    padding: 2em;
+}
+
+main {
+    background-color: white;
+}
+
+body {
+    background-color: #E5E5E5;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+h1,
+h2 {
+    font-family: 'Bevan', sans-serif;
+    color: #173753;
+    background-color: white;
+}
+
+h1 {
+    padding: 1.5em;
+    text-align: center;
+    margin: 0;
+    background-color: #173753;
+    color: white;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.7rem;
+}
+
+a {
+    color: #FF8484;
+}
+
+nav {
+    background-color: #173753;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav a:hover {
+    background-color: #FF8484;
+    color: #173753;
+}
