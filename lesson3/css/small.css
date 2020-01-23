@@ -4,8 +4,21 @@ main,
 footer {
     max-width: 960px;
     margin: 0 auto;
-    font-size: 16pt;
+    font-size: 11pt;
     padding: 2em;
+}
+
+header {
+    background-color: #264653;
+    /*display: grid;
+    grid-template-columns: 100px 1fr;*/
+}
+
+.icon {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main {
@@ -13,24 +26,27 @@ main {
 }
 
 body {
-    background-color: #E5E5E5;
+    background-color: #EFEFEF;
     padding-top: 0;
     padding-bottom: 0;
 }
 
-h1,
-h2 {
-    font-family: 'Bevan', sans-serif;
-    color: #173753;
-    background-color: white;
-}
-
 h1 {
+    font-family: 'Bevan', sans-serif;
+    font-size: 1.6em;
     padding: 1.5em;
     text-align: center;
     margin: 0;
-    background-color: #173753;
+    background-color: #264653;
     color: white;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bevan', sans-serif;
+    color: #2A9D8F;
 }
 
 p {
@@ -39,11 +55,15 @@ p {
 }
 
 a {
-    color: #FF8484;
+    color: #264653;
+}
+
+a:hover {
+    color: #F4A261;
 }
 
 nav {
-    background-color: #173753;
+    background-color: #E9C46A;
     text-align: center;
 }
 
@@ -56,15 +76,76 @@ nav ul {
 
 nav li a {
     display: block;
-    color: white;
+    color: #264653;
     text-align: center;
-    padding: 0.75rem;
+    padding: 0.95rem;
     text-decoration: none;
     font-size: 0.95rem;
     font-family: 'Raleway', sans-serif;
 }
 
 nav a:hover {
-    background-color: #FF8484;
-    color: #173753;
+    background-color: #E76F51;
+    color: #264653;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    background-color: #264653;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer a {
+    color: white;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+.site-header-sample {
+    color: white;
+    background-color: #264653;
+    font-size: 40px;
+    font-family: 'Bevan', sans-serif;
+}
+
+.navigation-sample {
+    color: #264653;
+    background-color: #E9C46A;
+    font-size: 16px;
+}
+
+.footer-sample {
+    color: white;
+    background-color: #264653;
+    font-size: 20pt;
+}
+
+.heading-sample {
+    color: #2A9D8F;
+    font-size: 32pt;
+}
+
+.paragraph-sample {
+    font-size: 16pt;
+}
+
+.rgb {
+    font-size: 16pt;
+    font-family: 'Raleway', sans-serif;
 }
