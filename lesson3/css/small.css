@@ -89,6 +89,11 @@ nav a:hover {
     color: #264653;
 }
 
+ul li,
+ol li {
+    font-family: 'Raleway', sans-serif;
+}
+
 img {
     max-width: 100%;
 }
@@ -120,7 +125,7 @@ td {
 .site-header-sample {
     color: white;
     background-color: #264653;
-    font-size: 40px;
+    font-size: 40pt;
     font-family: 'Bevan', sans-serif;
 }
 
@@ -139,6 +144,7 @@ td {
 .heading-sample {
     color: #2A9D8F;
     font-size: 32pt;
+    font-family: 'Bevan', sans-serif;
 }
 
 .paragraph-sample {
