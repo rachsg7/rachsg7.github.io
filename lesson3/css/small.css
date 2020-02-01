@@ -39,6 +39,7 @@ h1 {
     margin: 0;
     background-color: #264653;
     color: white;
+    font-weight: normal;
 }
 
 h2,
@@ -47,6 +48,7 @@ h4,
 h5 {
     font-family: 'Bevan', sans-serif;
     color: #2A9D8F;
+    font-weight: normal;
 }
 
 p {
