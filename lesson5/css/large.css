@@ -1,0 +1,13 @@
+@media (min-width: 82.5em) {
+    body,
+    main,
+    footer {
+        font-size: 20pt;
+    }
+    nav li a {
+        font-size: .75em;
+    }
+    p {
+        line-height: 2rem;
+    }
+}

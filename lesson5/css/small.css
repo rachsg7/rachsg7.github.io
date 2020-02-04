@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Bevan|Raleway&display=swap');
+main,
+footer {
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 11pt;
+    padding: 2em;
+}
+
+header {
+    background-color: #264653;
+    color: white;
+    /*display: grid;
+    grid-template-columns: 100px 1fr;*/
+}
+
+header p {
+    text-align: center;
+    margin: 0;
+}
+
+.icon {
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    background-color: white;
+}
+
+body {
+    background-color: #EFEFEF;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+h1 {
+    font-family: 'Bevan', sans-serif;
+    font-size: 1.6em;
+    padding: 0.5em;
+    text-align: center;
+    margin: 0;
+    background-color: #264653;
+    color: white;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bevan', sans-serif;
+    color: #2A9D8F;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.7rem;
+}
+
+a {
+    color: #264653;
+}
+
+a:hover {
+    color: #F4A261;
+}
+
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #E9C46A;
+    text-align: center;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+nav li a {
+    display: block;
+    color: #264653;
+    text-align: center;
+    padding: 0.95rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav a:hover {
+    background-color: #E76F51;
+    color: #264653;
+}
+
+ul li,
+ol li {
+    font-family: 'Raleway', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    background-color: #264653;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer a {
+    color: white;
+}
