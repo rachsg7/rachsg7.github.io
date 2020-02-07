@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Bangers|Bevan|Raleway&display=swap');
+* {
+    box-sizing: border-box;
+}
+
 main,
 footer {
     max-width: 960px;
@@ -49,27 +53,6 @@ header p {
     margin-left: auto;
     margin-right: auto;
 }
-
-
-/*
-header {
-    background-color: #264653;
-    color: white;
-    /*display: grid;
-    grid-template-columns: 100px 1fr;
-}
-
-header p {
-    text-align: center;
-    margin: 0;
-}
-
-.icon {
-    width: 150px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}*/
 
 main {
     background-color: white;
