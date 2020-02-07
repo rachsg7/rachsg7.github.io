@@ -44,6 +44,7 @@ h1 {
     margin: 0;
     background-color: #264653;
     color: white;
+    font-weight: normal;
 }
 
 h2,
@@ -52,6 +53,7 @@ h4,
 h5 {
     font-family: 'Bevan', sans-serif;
     color: #2A9D8F;
+    font-weight: normal;
 }
 
 p {
@@ -96,6 +98,7 @@ nav li a {
     text-decoration: none;
     font-size: 0.95rem;
     font-family: 'Raleway', sans-serif;
+    white-space: nowrap;
 }
 
 nav a:hover {
@@ -120,4 +123,72 @@ footer {
 
 footer a {
     color: white;
+}
+
+.weatherSummary {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.weatherSummaryTxt {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background-color: white;
+    padding: .9rem;
+    font-size: .75rem;
+    box-shadow: 0 0 30px #111;
+    opacity: .8;
+}
+
+.weatherSummaryGrid {
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    grid-column-gap: 15px;
+}
+
+.weatherSummaryTxt p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3rem;
+}
+
+.summaryp {
+    grid-column: 1/2;
+    justify-self: end;
+}
+
+.currentweather {
+    grid-column: 2/3;
+}
+
+
+/*.high {}
+
+.windchill {}
+
+.humidity {}
+
+.windspeed {}*/
+
+.fiveday {
+    display: none;
+}
+
+.active {
+    font-weight: bold;
+    background-color: #264653;
+    color: #E9C46A;
+}
+
+#banner {
+    background-color: #E9C46A;
+    color: #264653;
+    font-family: 'Raleway', sans-serif;
+    padding: .8em;
+    font-weight: bold;
+}
+
+.map {
+    display: none;
 }

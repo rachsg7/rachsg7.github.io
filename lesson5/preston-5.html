@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="../favicon.ico">
 </head>
 
 <body>
+    <div id="banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </div>
     <header>
         <img src="images/polarisweather.png" alt="Polaris Weather Logo" class="icon">
         <h1> Polaris Weather</h1>
@@ -22,7 +25,7 @@
         <ul class="navigation">
             <li><a class="ham" href="#">&#9776; Menu</a></li>
             <li><a href="">Home</a></li>
-            <li><a href="">Preston</a></li>
+            <li><a href="" class="active">Preston</a></li>
             <li><a href="">Soda Springs</a></li>
             <li><a href="">Fish Haven</a></li>
             <li><a href="">Storm Center</a></li>
@@ -31,17 +34,60 @@
     </nav>
     <main>
         <section>
-            <h2>Preston</h2>
+            <h2>Preston, Idaho</h2>
         </section>
-        <section>
-            <h3>Weather Summary</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a mauris imperdiet, euismod orci eget, elementum justo. Proin justo diam, suscipit non odio id, egestas dapibus magna. Ut varius dictum ipsum, a molestie est varius ac. Phasellus
-                tempus venenatis elit eu tincidunt. Pellentesque at nulla pretium, convallis justo sit amet, accumsan urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida tellus vitae risus egestas scelerisque et eu augue. Vivamus
-                nec feugiat quam, sit amet rhoncus augue.</p>
-            <img src="" alt="Hero Image">
+        <section class="weatherSummary">
+            <img src="images/heroImage.jpg" alt="Sunset and cloudy sky with mountains">
+            <div class="weatherSummaryTxt">
+                <h3>Weather Summary</h3>
+                <div class="weatherSummaryGrid">
+                    <p class="summaryp">Currently:</p>
+                    <p class="currentweather">Sunny</p>
+                    <p class="summaryp">High:</p>
+                    <p class="high">76&#xb0;</p>
+                    <p class="summaryp">Wind Chill:</p>
+                    <p class="windchill">&#xb0;F</p>
+                    <p class="summaryp">Humidity: </p>
+                    <p class="humidity">69%</p>
+                    <p class="summaryp">Wind Speed: </p>
+                    <p class="windspeed">5 mph</p>
+                </div>
+
+            </div>
+        </section>
+        <section class="fiveday">
+            <h3>5 Day Forecast</h3>
+            <div class="flex">
+                <div class="fivedaycol">
+                    <span id="dayOne" class="label"></span>
+                    <img src="images/iconfinder_weather-sunny_274762.png" alt="" class="icon">
+                    <span class="temperature">70&#xb0;F</span>
+                </div>
+                <div class="fivedaycol">
+                    <span id="dayTwo" class="label"></span>
+                    <img src="images/iconfinder_weather-sunny_274762.png" alt="" class="icon">
+                    <span class="temperature">70&#xb0;F</span>
+                </div>
+                <div class="fivedaycol">
+                    <span id="dayThree" class="label"></span>
+                    <img src="images/iconfinder_weather-sunny_274762.png" alt="" class="icon">
+                    <span class="temperature">70&#xb0;F</span>
+                </div>
+                <div class="fivedaycol">
+                    <span id="dayFour" class="label"></span>
+                    <img src="images/iconfinder_weather-sunny_274762.png" alt="" class="icon">
+                    <span class="temperature">70&#xb0;F</span>
+                </div>
+                <div class="fivedaycol">
+                    <span id="dayFive" class="label"></span>
+                    <img src="images/iconfinder_weather-sunny_274762.png" alt="" class="icon">
+                    <span class="temperature">70&#xb0;F</span>
+                </div>
+            </div>
         </section>
         <article>
             <h3>Article Title</h3>
+            <img src="images/articleImage.jpg" alt="Man looking out window with backpack" class="articleimg">
             <p>by author</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a mauris imperdiet, euismod orci eget, elementum justo. Proin justo diam, suscipit non odio id, egestas dapibus magna. Ut varius dictum ipsum, a molestie est varius ac. Phasellus
                 tempus venenatis elit eu tincidunt. Pellentesque at nulla pretium, convallis justo sit amet, accumsan urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida tellus vitae risus egestas scelerisque et eu augue. Vivamus
@@ -52,12 +98,25 @@
                 tempor tincidunt. Suspendisse tincidunt, orci id tempor vulputate, arcu nunc dignissim nisl, vel bibendum quam mauris quis nisl. In hac habitasse platea dictumst. Sed ut arcu at arcu laoreet venenatis. Curabitur ac turpis vel odio sagittis
                 venenatis at sit amet risus. Vivamus lobortis orci sit amet est congue, id luctus nulla fermentum. Proin tincidunt enim libero, in aliquet urna euismod porttitor. Duis at mi leo. Morbi quis egestas nunc. Cras rutrum lectus ac porttitor
                 facilisis. Vivamus hendrerit felis tristique erat sollicitudin, at dignissim metus finibus. Fusce finibus hendrerit lorem non posuere. Mauris et felis fringilla, tempus urna tempus, congue tellus.</p>
-            <img src="" alt="Article Image">
         </article>
-        <section>
+        <section class="contact">
             <h3>Contact Information</h3>
-            <!-- Form Stuff here -->
-            <!-- Map stuff here -->
+            <div class="address">
+                <p><b>Polaris Weather</b></p>
+                <p>1400 N State Street</p>
+                <p>Preston, ID 83263</p>
+            </div>
+            <div class="phoneemail">
+                <p>&#x260F; 999-999-9999</p>
+                <p>&#x2709; polarisweather@polaris.com</p>
+            </div>
+            <div class="socialmedia">
+                <a href="facebook.com"><img src="images/iconfinder_1_Facebook_colored_svg_copy_5296499.png"></a>
+                <a href="twitter.com"><img src="images/iconfinder_1_Twitter2_colored_svg_5296515.png"></a>
+                <a href="youtube.com"><img src="images/iconfinder_1_Youtube_colored_svg_5296521.png"></a>
+            </div>
+
+            <img src="images/map.jpg" class="map">
         </section>
     </main>
     <footer>

@@ -12,6 +12,12 @@ let dayofMonth = date.getDate();
 let month = date.getMonth();
 let year = date.getFullYear();
 
+if (day == 5) {
+    document.getElementById('banner').style.display = "block";
+} else {
+    document.getElementById('banner').style.display = "none";
+}
+
 function getFullDay() {
     let fullDate = "";
     switch (day) {
@@ -80,6 +86,42 @@ function getFullDay() {
     return fullDate;
 }
 
+function getShortDay(day) {
+    let shortDay = "";
+    if (day > 6) {
+        day %= 7;
+    }
+    switch (day) {
+        case 0:
+            shortDay += "Sun";
+            break;
+        case 1:
+            shortDay += "Mon";
+            break;
+        case 2:
+            shortDay += "Tue";
+            break;
+        case 3:
+            shortDay += "Wed";
+            break;
+        case 4:
+            shortDay += "Thu";
+            break;
+        case 5:
+            shortDay += "Fri";
+            break;
+        case 6:
+            shortDay += "Sat";
+    }
+    return shortDay;
+}
+
+// Add dates to HTML
+document.getElementById("dayOne").innerHTML = getShortDay(day);
+document.getElementById("dayTwo").innerHTML = getShortDay(day + 1);
+document.getElementById("dayThree").innerHTML = getShortDay(day + 2);
+document.getElementById("dayFour").innerHTML = getShortDay(day + 3);
+document.getElementById("dayFive").innerHTML = getShortDay(day + 4);
 
 document.getElementById("currentDate").innerHTML = getFullDay();
 document.getElementById("timeUpdated").innerHTML = lastModified;

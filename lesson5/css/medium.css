@@ -43,4 +43,84 @@
         padding-top: 10px;
         float: left;
     }
+    .weatherSummaryTxt {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        background-color: white;
+        padding: 1.5rem;
+        font-size: 1.2rem;
+        box-shadow: 0 0 30px #111;
+        opacity: .8;
+    }
+    .weatherSummaryTxt p {
+        margin: 0;
+        padding: 0;
+        line-height: 1.6rem;
+    }
+    article img {
+        float: right;
+        margin: 15px;
+        margin-right: 0px;
+    }
+    .flex {
+        display: flex;
+        flex-direction: row;
+    }
+    .fivedaycol {
+        font-family: 'Raleway', sans-serif;
+        border-top: 1px solid #333;
+        border-bottom: 1px solid #333;
+        border-left: 1px solid #333;
+        background-color: #E9C46A;
+        color: #264653;
+        text-align: center;
+    }
+    .flex div:last-child {
+        border-right: 1px solid #333;
+    }
+    .label {
+        display: block;
+        padding: 5px;
+        font-weight: 700;
+        border-bottom: 1px solid #333;
+        background-color: #264653;
+        color: white;
+    }
+    .flex div img {
+        padding: 5px;
+    }
+    .temperature {
+        display: block;
+        padding: 0 5px 5px;
+    }
+    .fiveday {
+        display: block;
+    }
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
+    .address {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        align-self: end;
+    }
+    .phoneemail {
+        grid-row: 3/4;
+        grid-column: 2/3;
+        align-self: center;
+    }
+    .socialmedia {
+        grid-row: 4/5;
+        grid-column: 2/3;
+    }
+    .map {
+        display: block;
+        grid-row: 2/5;
+    }
+    .contact p {
+        margin: 0;
+    }
 }
