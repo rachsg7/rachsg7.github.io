@@ -14,13 +14,16 @@
 </head>
 
 <body>
+    <!-- Banner that only shows on Fridays -->
     <div id="banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
     </div>
+    <!-- Logo, header, and tagline -->
     <header>
         <img src="images/polarisweather.png" alt="Polaris Weather Logo" class="icon">
         <h1> Polaris Weather</h1>
         <p>Guiding your weather knowledge</p>
     </header>
+    <!-- Navigation -->
     <nav>
         <ul class="navigation">
             <li><a class="ham" href="#">&#9776; Menu</a></li>
@@ -33,12 +36,11 @@
         </ul>
     </nav>
     <main>
-        <section>
-            <h2>Preston, Idaho</h2>
-        </section>
+        <h2>Preston, Idaho</h2>
+        <!-- Weather Summary Image and Text -->
         <section class="weatherSummary">
             <figure class="heroImage">
-                <img src="images/cit230_image_franklinOriginal.jpg" alt="Hero Image" sizes="100vw" srcset="images/cit230_image_franklinsmall.jpg 350w,
+                <img src="images/cit230_image_franklinOriginal.jpg" alt="Hero Image" sizes="50vw" srcset="images/cit230_image_franklinsmall.jpg 350w,
                 images/cit230_image_franklinmedium.jpg 500w,
                 images/cit230_image_franklinlarge.jpg 900w           
                 ">
@@ -58,9 +60,9 @@
                     <p class="summaryp">Wind Speed: </p>
                     <p class="windspeed"><span id="windSp">5</span> mph</p>
                 </div>
-
             </div>
         </section>
+        <!-- Five Day Forecast -->
         <section class="fiveday">
             <h3>5 Day Forecast</h3>
             <div class="flex">
@@ -91,6 +93,7 @@
                 </div>
             </div>
         </section>
+        <!-- Article -->
         <article>
             <h3>Article Title</h3>
             <img src="images/articleImage.jpg" alt="Man looking out window with backpack" class="articleimg">
@@ -105,6 +108,7 @@
                 venenatis at sit amet risus. Vivamus lobortis orci sit amet est congue, id luctus nulla fermentum. Proin tincidunt enim libero, in aliquet urna euismod porttitor. Duis at mi leo. Morbi quis egestas nunc. Cras rutrum lectus ac porttitor
                 facilisis. Vivamus hendrerit felis tristique erat sollicitudin, at dignissim metus finibus. Fusce finibus hendrerit lorem non posuere. Mauris et felis fringilla, tempus urna tempus, congue tellus.</p>
         </article>
+        <!-- Contact Information and Map-->
         <section class="contact">
             <h3>Contact Information</h3>
             <div class="address">
@@ -117,9 +121,9 @@
                 <p>&#x2709; polarisweather@polaris.com</p>
             </div>
             <div class="socialmedia">
-                <a href="facebook.com"><img src="images/iconfinder_1_Facebook_colored_svg_copy_5296499.png"></a>
-                <a href="twitter.com"><img src="images/iconfinder_1_Twitter2_colored_svg_5296515.png"></a>
-                <a href="youtube.com"><img src="images/iconfinder_1_Youtube_colored_svg_5296521.png"></a>
+                <a href="facebook.com"><img src="images/iconfinder_1_Facebook_colored_svg_copy_5296499.png" alt="facebook"></a>
+                <a href="twitter.com"><img src="images/iconfinder_1_Twitter2_colored_svg_5296515.png" alt="twitter"></a>
+                <a href="youtube.com"><img src="images/iconfinder_1_Youtube_colored_svg_5296521.png" alt="youtube"></a>
             </div>
 
             <img src="images/map.jpg" class="map">
@@ -130,6 +134,15 @@
 
 
     <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Bangers|Bevan|Raleway']
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -43,19 +43,14 @@
         padding-top: 10px;
         float: left;
     }
+    .weatherSummary {
+        margin-bottom: 50px;
+    }
     .weatherSummaryTxt {
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        background-color: white;
         padding: 1.5rem;
         font-size: 1.2rem;
-        box-shadow: 0 0 30px #111;
-        opacity: .8;
     }
     .weatherSummaryTxt p {
-        margin: 0;
-        padding: 0;
         line-height: 1.6rem;
     }
     article img {

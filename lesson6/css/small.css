@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Bangers|Bevan|Raleway&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Bangers|Bevan|Raleway&display=swap'); */
+
 * {
     box-sizing: border-box;
 }
@@ -155,7 +156,7 @@ footer a {
 
 .weatherSummary {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 77px;
 }
 
 .weatherSummaryTxt {
@@ -163,8 +164,8 @@ footer a {
     top: 25px;
     left: 25px;
     background-color: white;
-    padding: .9rem;
-    font-size: 1rem;
+    padding: .7rem;
+    font-size: .9rem;
     box-shadow: 0 0 30px #111;
     opacity: .8;
 }
@@ -223,4 +224,14 @@ footer a {
 
 figure {
     margin: 0;
+}
+
+figure img {
+    width: 100%;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }

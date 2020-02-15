@@ -121,26 +121,6 @@ function getShortDay(day) {
     return shortDay;
 }
 
-/**
- * Calculates wind chill based on current temperature and wind speed
- * If temperature is greater than 50, or wind speed is less than 3 mph,
- * it returns the temperature because there is no wind chill
- */
-function windChill() {
-    let windSpeed = document.getElementById('windSp').innerHTML;
-    windSpeed = parseFloat(windSpeed);
-    let temperature = document.getElementById('temp').innerHTML;
-    temperature = parseFloat(temperature);
-    if (temperature <= 50 && windSpeed >= 3) {
-        let windspeedExponent = Math.pow(windSpeed, 0.16);
-        let windChill = (35.74 + 0.6215 * temperature - 35.75 * windspeedExponent + 0.4275 * temperature * windspeedExponent).toFixed(0);
-        return windChill;
-    } else {
-        return temperature;
-    }
-
-}
-
 // Add dates to HTML
 document.getElementById("dayOne").innerHTML = getShortDay(day);
 document.getElementById("dayTwo").innerHTML = getShortDay(day + 1);
@@ -151,6 +131,3 @@ document.getElementById("dayFive").innerHTML = getShortDay(day + 4);
 document.getElementById("currentDate").innerHTML = getFullDay();
 document.getElementById("timeUpdated").innerHTML = lastModified;
 document.getElementById("currentYear").innerHTML = date.getFullYear();
-
-// Wind Chill calculation
-document.getElementById("windch").innerHTML = windChill() + "&#xb0;F";
