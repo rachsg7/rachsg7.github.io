@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Spartan&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+main,
+footer {
+    margin: 0px auto;
+    max-width: 95%;
+}
+
+h1,
+h2 {
+    color: #4d4d96;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    font-family: 'Spartan', sans-serif;
+    margin: 10px;
+}
+
+section {
+    background-color: #b9b9cc;
+    text-align: center;
+    padding: 1em;
+    margin: 5px 5px;
+    border: 1px solid #4d4d96;
+    max-width: 90%;
+}
+
+img {
+    width: 337px;
+    max-width: 90%;
+}
+
+.cards {
+    box-shadow: 0 0 30px 0px #848484;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #dddddd;
+    max-width: 90%;
+    padding: 15px;
+}
+
+footer {
+    padding: 2em;
+    text-align: center;
+    font-family: 'Spartan', sans-serif;
+}
