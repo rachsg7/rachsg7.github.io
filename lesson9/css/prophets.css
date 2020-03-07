@@ -49,6 +49,7 @@ section {
 
 section:hover {
     background-color: #E9C46A;
+    color: #264653;
 }
 
 img {
@@ -74,4 +75,16 @@ footer {
     text-align: center;
     font-family: 'Raleway', sans-serif;
     max-width: 100%;
+}
+
+@media (min-width: 32.5em) {
+    section {
+        max-width: 45%;
+    }
+}
+
+@media (min-width: 82.5em) {
+    section {
+        max-width: 24%;
+    }
 }
