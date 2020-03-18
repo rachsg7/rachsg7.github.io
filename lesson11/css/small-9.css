@@ -167,16 +167,15 @@ footer a {
 }
 
 .container {
-    background-color: #dddddd;
-    padding: 15px;
+    background-color: white;
 }
 
 .weathernow {
     background-color: white;
     border: 1px solid grey;
     padding: 15px;
-    background-color: #264653;
-    color: white;
+    background-color: lightgray;
+    color: black;
 }
 
 .citycards section {
