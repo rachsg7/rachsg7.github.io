@@ -45,16 +45,16 @@
             </fieldset>
             <fieldset>
                 <legend>Storm Information</legend>
-                <label><div>Storm Date</div> <input type="date" name="stormdate"></label>
-                <label><div>Storm Type</div> <input list="stormtype" name="stormtypes">
+                <p><label>Storm Date <input type="date" name="stormdate"></label></p>
+                <p><label>Storm Type <input list="stormtype" name="stormtypes"></label></p>
                 <datalist id="stormtype">
                     <option value="Flash Flood">
                     <option value="Hail">
                     <option value="Hurricane">
                     <option value="Thunderstorm">
                     <option value="Tornado">    
-                </datalist></label>
-                <label for="rating"><div>Storm Severity</div> &nbsp;&nbsp;&nbsp;
+                </datalist>
+                <label for="rating">Storm Severity &nbsp;&nbsp;&nbsp;
                     <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                             <span id="ratingvalue">5</span>
                     </label>
@@ -73,7 +73,7 @@
                 <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
                 <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
                 <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
-                <label><div>Additional Information or Comments</div><textarea class="top"></textarea></label>
+                <label>Additional Information or Comments<textarea class="top"></textarea></label>
             </fieldset>
 
             <input type="submit" value="Report Storm" class="submitButton">
