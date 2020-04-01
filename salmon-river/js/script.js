@@ -16,7 +16,7 @@ document.getElementById("currentYear").innerHTML = date.getFullYear();
 
 // JSON
 
-const requestURL = '../json/employeedata.json';
+const requestURL = 'http://rachsg7.github.io/salmon-river/json/employeedata.json';
 fetch(requestURL)
     .then(function(response) {
         return response.json();
