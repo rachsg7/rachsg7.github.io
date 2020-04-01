@@ -1,0 +1,29 @@
+{
+    "employees": [{
+            "name": "Cohan Payne",
+            "photo": "cohan.jpg",
+            "certification": "Level 5",
+            "years": "8",
+            "email": "cohanpayne@salmonriver.com",
+            "bio": "Cohan grew up in Idaho, and started going rafting with his parents at a young age. It has grown into a passion. He also loves playing guitar and eating good food."
+        },
+        {
+            "name": "Aurora Ritter",
+            "photo": "aurora.jpg",
+            "certification": "Level 3",
+            "years": "3",
+            "email": "auroraritter@salmonriver.com",
+            "bio": "Aurora has lived all over the United States, but is currently going to college in Idaho. She started rafting five years ago, and has loved it ever since. She loves taking families and kids out to experience the river. She also enjoys rock climbing, music, and writing."
+        },
+        {
+            "name": "Corey Daniels",
+            "photo": "corey.jpg",
+            "certification": "Level 4",
+            "years": "5",
+            "email": "coreydaniels@salmonriver.com",
+            "bio": "Corey grew up in Philadelphia and now lives in Idaho with his wife and young son. He loves being outdoors and all outdoor sports."
+        }
+
+    ]
+
+}

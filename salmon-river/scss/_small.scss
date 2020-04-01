@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+}
+
+.header-logo {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-gap: 5px;
+    position: absolute;
+    top: .5em;
+    left: .5em;
+    margin: 15px;
+    padding: 1em;
+    font-size: 11px;
+    font-family: $headerFont;
+    background-color: $primaryColor;
+    color: white;
+    box-shadow: 0 0 30px #111;
+    opacity: .8;
+}
+
+.header-logo img,
+.header-logo h1 {
+    align-self: center;
+}
+
+img {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $headerFont;
+    font-weight: normal;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    color: $secondaryColor;
+}
+
+body {
+    font-family: $bodyFont;
+}
+
+.icon {
+    width: 75px;
+}
+
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+nav li a {
+    display: block;
+    color: $primaryColor;
+    text-align: center;
+    padding: 0.95rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    background-color: $primaryColor;
+    color: white;
+}
+
+.active {
+    background-color: $secondaryColor;
+    color: white;
+}
+
+a {
+    color: $black;
+}
+
+a:hover {
+    color: white;
+}
+
+main {
+    margin: 5%;
+}
+
+.information {
+    text-align: center;
+}
+
+.info-text {
+    margin-bottom: 2em;
+}
+
+.weather {
+    position: relative;
+}
+
+.weathertxt {
+    position: absolute;
+    top: .5em;
+    left: .5em;
+    background-color: white;
+    color: $black;
+    box-shadow: 0 0 30px #111;
+    opacity: .8;
+    padding: 1em;
+    margin: 5%;
+}
+
+.description-img {
+    float: right;
+    max-width: 400px;
+    margin-left: 15px;
+}
+
+footer {
+    background-color: $secondaryColor;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
