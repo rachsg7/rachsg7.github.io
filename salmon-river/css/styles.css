@@ -699,7 +699,7 @@ th {
     grid-gap: 15px;
   }
   .contactcontainer form {
-    grid-row: 2/3;
+    grid-row: 2/4;
     grid-column: 1/2;
   }
   .contactcontainer p {
@@ -712,7 +712,7 @@ th {
   }
   .contactcontainer .map {
     grid-row: 3/4;
-    grid-column: 1/3;
+    grid-column: 2/3;
   }
   .adventures {
     clear: both;
