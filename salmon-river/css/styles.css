@@ -620,6 +620,7 @@ th {
 .flex {
   display: flex;
   flex-direction: row;
+  font-size: small;
 }
 
 .col {
@@ -717,6 +718,9 @@ th {
   .adventures {
     clear: both;
     margin-bottom: 208px;
+  }
+  .flex {
+    font-size: medium;
   }
 }
 
