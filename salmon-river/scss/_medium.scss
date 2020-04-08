@@ -32,3 +32,57 @@ nav a:hover {
     display: flex;
     margin: 50px 0;
 }
+
+.employees {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.employees section {
+    max-width: 250px;
+}
+
+.right img {
+    float: right;
+    margin-left: 15px;
+}
+
+.left img {
+    float: left;
+    margin-right: 15px;
+}
+
+form textarea {
+    width: 70%;
+}
+
+.contactcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.contactcontainer form {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.contactcontainer p {
+    grid-column: 1/3;
+}
+
+.contactcontainer .contactinfo {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin-top: 50px;
+}
+
+.contactcontainer .map {
+    grid-row: 3/4;
+    grid-column: 1/3;
+}
+
+.adventures {
+    clear: both;
+    margin-bottom: 208px;
+}

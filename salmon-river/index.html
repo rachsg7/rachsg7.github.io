@@ -17,6 +17,8 @@
             <img src="images/logo.png" alt="Salmon River Logo" class="icon">
             <h1>Salmon River Adventures</h1>
         </div>
+        <!-- I just want to point out that because I'm using srcset, this does funny things when making it large and then small again, but
+        in Google it works if I'm not constantly changing the width. -->
         <img src="images/header-large.jpg" alt="River Rafting" sizes="50vw" srcset="images/header-small.jpg 350w,
                 images/header-medium.jpg 500w,
                 images/header-large.jpg 900w           
@@ -25,8 +27,8 @@
     <!-- Navigation -->
     <nav>
         <ul class="navigation">
-            <li><a class="ham" href="#">&#9776; Menu</a></li>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a class="ham" href="#">&#9776;</a></li>
+            <li><a href="index.html" class="active" id="thispage">Home</a></li>
             <li><a href="river-guide.html">River Guide</a></li>
             <li><a href="adventure.html">Adventure Trips</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>
@@ -36,9 +38,9 @@
     <!-- Main -->
     <main>
         <!-- First image with possibly rotating images -->
-        <section>
+        <section class="adventures">
             <h2>Salmon River Adventures</h2>
-            <img src="images/first-large.jpg" alt="Whitewater Rafting" class="description-img">
+            <img src="images/first-large.jpg" alt="Whitewater Rafting" class="description-img clearright">
             <p>Are you looking for adventure? Do you want to try something new? Or are you an experienced rafter who is looking to learn more and challenge yourself? We at Salmon River Adventures have you covered. Our experienced tour guides are ready to
                 help adventurers of all ages and skill levels. Join us for our day trips, and if you're looking for a weekend adventure we have one and two night getaway packages.
             </p>
@@ -54,17 +56,18 @@
         </section>
         <!-- Weather and picture-->
         <section class="weather">
-            <img src="images/weather-large.jpg">
+            <img src="images/weather-large.jpg" class="weather-img">
             <div class="weathertxt">
                 <p>Weather in Riggins, ID</p>
-                <p>Currently: <span></span></p>
-                <p>High: <span></span></p>
-                <p>Low: <span></span></p>
-                <p>Humidity: <span></span></p>
-                <p>Wind Speed: <span></span></p>
+                <p>Currently: <span id="currenttemp"></span></p>
+                <p>High: <span id="hightemp"></span></p>
+                <p>Low: <span id="lowtemp"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Wind Speed: <span id="windspeed"></span></p>
             </div>
+
         </section>
-        <h2>Ready to go on an adventure? Call us today!</h2>
+        <h2 class="clearleft">Ready to go on an adventure? Call us today!</h2>
     </main>
     <footer>
         <span id="currentDate"></span><br> &copy; <span id="currentYear"></span> | Rachel Schutz | Washington | <a href="https://www.byui.edu/online">BYUI Online Learning</a>

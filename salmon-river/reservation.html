@@ -30,11 +30,69 @@
             <li><a href="river-guide.html">River Guide</a></li>
             <li><a href="adventure.html">Adventure Trips</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>
-            <li><a href="reservation.html" class="active">Reservation</a></li>
+            <li><a href="reservation.html" class="active" id="thispage">Reservation</a></li>
         </ul>
     </nav>
     <!-- Main -->
     <main>
+        <h2>Make a Reservation Today!</h2>
+
+        <div class="flex">
+            <div class="col">
+                <span class="label">Level 1 - Beginner</span>
+                <span class="data">Perfect for beginners or families. Two hour trip is $75 per person.</span>
+            </div>
+            <div class="col">
+                <span class="label">Level 2 - Intermediate</span>
+                <span class="data">Slightly more challenging than beginner, with harder rapids. Three hour trip is $80 per person.</span>
+            </div>
+            <div class="col">
+                <span class="label">Level 3 - Advanced</span>
+                <span class="data">Most challenging rapids, only for experienced rafters. Three hour trip, $80 per person.</span>
+            </div>
+        </div>
+        <!-- <table>
+            <tr>
+                <th>Level 1 - Beginner</th>
+                <th>Level 2 - Medium</th>
+                <th>Level 3 - Advanced</th>
+            </tr>
+            <tr>
+                <td>Perfect for beginners or families. Two hour trip is $75 per person.</th>
+                    <td>Slightly more challenging than beginner, with harder rapids. Three hour trip is $80 per person.</th>
+                        <td>Most challenging rapids, only for experienced rafters. Three hour trip, $80 per person.</th>
+            </tr>
+
+        </table> -->
+
+        <!-- Form -->
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Adventurer's Information</legend>
+                <label class="top">Full Name* <input type="text" name="name" pattern="[a-zA-Z]{5,}" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="name@gmail.com" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Adventure Selection</legend>
+                <label class="top">Choose Your Adventure
+                    <select name="chooseadventure">
+                        <option value="" selected disabled>Choose Your Own Adventure...</option>
+                        <option value="levelone">Level 1</option>
+                        <option value="leveltwo">Level 2</option>
+                        <option value="levelthree">Level 3</option>
+                    </select>
+                </label>
+                <p><label>Start Date <input type="date" name="stormdate"></label></p>
+
+            </fieldset>
+            <fieldset>
+                <legend>Any Questions or Comments?</legend>
+                <label>Additional Information or Comments<textarea class="top"></textarea></label>
+            </fieldset>
+
+            <input type="submit" value="Book My Adventure" class="submitButton">
+        </form>
     </main>
     <footer>
         <span id="currentDate"></span><br> &copy; <span id="currentYear"></span> | Rachel Schutz | Washington | <a href="https://www.byui.edu/online">BYUI Online Learning</a>

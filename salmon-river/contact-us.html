@@ -29,12 +29,35 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="river-guide.html">River Guide</a></li>
             <li><a href="adventure.html">Adventure Trips</a></li>
-            <li><a href="contact-us.html" class="active">Contact Us</a></li>
+            <li><a href="contact-us.html" class="active" id="thispage">Contact Us</a></li>
             <li><a href="reservation.html">Reservation</a></li>
         </ul>
     </nav>
     <!-- Main -->
     <main>
+        <h2>Contact Us</h2>
+        <div class="contactcontainer">
+            <p>If you have any questions or concerns, please don't hesitate to reach out to us here, or give us a call.</p>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    <label class="top">Full Name* <input type="text" name="name" required></label>
+                    <label class="top">Email <input type="email" name="email" placeholder="name@gmail.com"></label>
+                    <label class="top">Phone* <input type="tel" name="phone" required></label>
+                    <label class="top">Comments or Questions<br><textarea class="top"></textarea></label>
+
+                    <input type="submit" value="Send Questions" class="submitButton">
+                </fieldset>
+            </form>
+            <div class="contactinfo"><b>Phone:</b> 208-555-5555<br>
+                <b>Email:</b> salmonadventures@salmonriver.com<br>
+                <b>Address:</b> 1000 S Main St, Riggins, ID 83549</div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.5803102736404!2d-116.31801746676!3d45.41780211189511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54a6c5695ed5fae5%3A0x837cd0558ffd520c!2s1000%20S%20Main%20St%2C%20Riggins%2C%20ID%2083549!5e0!3m2!1sen!2sus!4v1585975340145!5m2!1sen!2sus"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+
     </main>
     <footer>
         <span id="currentDate"></span><br> &copy; <span id="currentYear"></span> | Rachel Schutz | Washington | <a href="https://www.byui.edu/online">BYUI Online Learning</a>

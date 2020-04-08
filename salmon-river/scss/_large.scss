@@ -1,5 +1,5 @@
 main {
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
     font-size: 1.4em;
 }
@@ -16,4 +16,16 @@ nav {
 
 .description-img {
     max-width: 600px;
+}
+
+.weathertxt {
+    padding-right: 35%;
+}
+
+.employees section {
+    max-width: 385px;
+}
+
+.contactcontainer form {
+    width: 80%;
 }

@@ -368,6 +368,10 @@ header {
 }
 
 img {
+  max-width: 100%;
+}
+
+header img {
   width: 100%;
 }
 
@@ -385,6 +389,7 @@ h3,
 h4,
 h5 {
   color: #319475;
+  margin-top: 1em;
 }
 
 body {
@@ -443,6 +448,14 @@ a:hover {
   color: white;
 }
 
+h2 a {
+  color: #319475;
+}
+
+h2 a:hover {
+  color: #F75A42;
+}
+
 main {
   margin: 5%;
 }
@@ -461,13 +474,16 @@ main {
 
 .weathertxt {
   position: absolute;
-  top: .5em;
-  left: .5em;
-  background-color: white;
-  color: #0E0E0E;
-  box-shadow: 0 0 30px #111;
+  top: 15px;
+  left: 15px;
+  width: 90%;
+  text-align: right;
+  color: white;
+  background-color: #F75A42;
+  box-shadow: -9px 7px 17px #111;
   opacity: .8;
   padding: 1em;
+  padding-right: 16%;
   margin: 5%;
 }
 
@@ -477,6 +493,27 @@ main {
   margin-left: 15px;
 }
 
+.weather-img {
+  float: left;
+  max-width: 100%;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.clearleft {
+  clear: left;
+}
+
+.clearright {
+  clear: right;
+}
+
+.employees section {
+  box-shadow: -9px 7px 17px #111;
+  padding: 4%;
+  margin: 15px 15px 15px 0px;
+}
+
 footer {
   background-color: #319475;
   color: white;
@@ -484,7 +521,132 @@ footer {
   text-align: center;
 }
 
-@media only screen and (min-width: 560px) {
+.right,
+.left {
+  margin: 50px 0;
+}
+
+.contactinfo {
+  line-height: 1.5em;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 1.5rem 20px;
+}
+
+form legend {
+  color: black;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+}
+
+form label.top,
+form div,
+form label.sbs {
+  display: block;
+  padding-top: 1rem;
+  color: #353535;
+  font-size: .8em;
+}
+
+form label.top input,
+form label.top select {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+}
+
+form label.sbs {
+  display: block;
+  padding: .75rem 0;
+  color: #555;
+}
+
+form textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  border-radius: 4px;
+}
+
+form input.submitButton {
+  border: none;
+  font-size: 100%;
+  background-color: #F75A42;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 2rem 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+
+form input {
+  font-size: 62%;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+td,
+th {
+  padding: 20px;
+}
+
+th {
+  background-color: #319475;
+  color: white;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  flex: 1 1 100%;
+  text-align: center;
+  border-top: 1px solid #0E0E0E;
+  border-bottom: 1px solid #0E0E0E;
+  border-left: 1px solid #0E0E0E;
+}
+
+.flex div:last-child {
+  border-right: 1px solid #0E0E0E;
+}
+
+.data {
+  display: block;
+  padding: 10px;
+}
+
+.label {
+  display: block;
+  background-color: #319475;
+  color: white;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 600px) {
   main {
     max-width: 540px;
     margin: 0 auto;
@@ -513,11 +675,54 @@ footer {
     display: flex;
     margin: 50px 0;
   }
+  .employees {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .employees section {
+    max-width: 250px;
+  }
+  .right img {
+    float: right;
+    margin-left: 15px;
+  }
+  .left img {
+    float: left;
+    margin-right: 15px;
+  }
+  form textarea {
+    width: 70%;
+  }
+  .contactcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+  }
+  .contactcontainer form {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .contactcontainer p {
+    grid-column: 1/3;
+  }
+  .contactcontainer .contactinfo {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin-top: 50px;
+  }
+  .contactcontainer .map {
+    grid-row: 3/4;
+    grid-column: 1/3;
+  }
+  .adventures {
+    clear: both;
+    margin-bottom: 208px;
+  }
 }
 
-@media only screen and (min-width: 1028px) {
+@media only screen and (min-width: 1200px) {
   main {
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
     font-size: 1.4em;
   }
@@ -531,5 +736,14 @@ footer {
   }
   .description-img {
     max-width: 600px;
+  }
+  .weathertxt {
+    padding-right: 35%;
+  }
+  .employees section {
+    max-width: 385px;
+  }
+  .contactcontainer form {
+    width: 80%;
   }
 }
